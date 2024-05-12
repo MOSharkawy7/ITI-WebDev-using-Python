@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(9, 9, 9);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.navul {
+    list-style-type: none;
+    display: block;
+    margin-left: 0px;
+    background-color: #f4511e;
+    width: 100%;
+    height: 60px;
+    padding-bottom: 50px;
+    /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.navli a {
+    color: white;
+    text-decoration: none;
+    float: right;
+    padding: 20px 50px;
+}
+
+.navli a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: black;
+}
+
+#bt1 {
+    background-color: bisque;
+    color: black;
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+
+#bt1:hover {
+    background-color: black;
+    color: white;
+}
+
+#bt2:hover {
+    background-color: #f4511e;
+    animation: forwards;
+    color: white;
+}
+
+#bt2 {
+    border-radius: 25px;
+    border: 3px goldenrod solid;
+    background-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#bt2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#bt2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#bt2:hover span {
+    padding-right: 25px;
+}
+
+#bt2:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#sec3 {
+    background-image: url('charles-gaudreault-xXofYCc3hqc-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    color: white;
+}
+
+#a3 {
+    background-color: gray;
+    opacity: 75%;
+    width: 100%;
+    height: 500px;
+}
+
+.hide {
+    display: none;
+}
+
+.col-md-3:hover+.hide {
+    display: block;
+    color: #f4511e;
+}
